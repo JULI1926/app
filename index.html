@@ -92,10 +92,12 @@
             width: 300px;
             /* Define un ancho fijo */
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            /* Centra el menú en la pantalla */
+            top: 0;
+            /* Coloca el menú en la parte superior */
+            left: 0;
+            /* Coloca el menú en la parte izquierda */
+            transform: translate(0, 0);
+            /* Elimina la transformación de centrado */
             transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
             z-index: 1001;
             padding: 20px;
