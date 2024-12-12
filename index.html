@@ -10,139 +10,11 @@
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/moon.css"> <!-- Cambiado de "black" a "moon" -->
+    <link rel="stylesheet" href="css/menu.css">
 
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css">
-    <style>
-        /* Incluye aquí los estilos CSS del menú hamburguesa */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .hamburger {
-            position: fixed;
-            background-color: transparent;
-            left: 0;
-            top: 0;
-            height: 70px;
-            width: 70px;
-            padding: 20px 20px;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-            transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-            z-index: 1002;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none
-        }
-
-        .hamburger.is-active {
-            background-color: none;
-        }
-
-        ._layer {
-            background: #571111;
-            margin-bottom: 4px;
-            border-radius: 2px;
-            width: 40px;
-            height: 6px;
-            opacity: 1;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-            transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-        }
-
-        .hamburger:hover .-top {
-            -webkit-transform: translateY(-100%);
-            -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
-        }
-
-        .hamburger:hover .-bottom {
-            -webkit-transform: translateY(50%);
-            -ms-transform: translateY(100%);
-            transform: translateY(100%);
-        }
-
-        .hamburger.is-active .-top {
-            -webkit-transform: translateY(200%) rotate(45deg) !important;
-            -ms-transform: translateY(200%) rotate(45deg) !important;
-            transform: translateY(200%) rotate(45deg) !important;
-        }
-
-        .hamburger.is-active .-mid {
-            opacity: 0;
-        }
-
-        .hamburger.is-active .-bottom {
-            -webkit-transform: translateY(-200%) rotate(135deg) !important;
-            -ms-transform: translateY(-200%) rotate(135deg) !important;
-            transform: translateY(-200%) rotate(135deg) !important;
-        }
-
-        .menuppal {
-            background-color: rgba(255, 255, 255, 0.5);
-            /* Ajusta la transparencia aquí */
-            height: auto;
-            /* Ajusta la altura automáticamente */
-            width: 300px;
-            /* Define un ancho fijo */
-            position: fixed;
-            top: 0;
-            /* Coloca el menú en la parte superior */
-            left: 0;
-            /* Coloca el menú en la parte izquierda */
-            transform: translate(0, 0);
-            /* Elimina la transformación de centrado */
-            transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-            z-index: 1001;
-            padding: 20px;
-            /* Añade un poco de padding */
-            border-radius: 10px;
-            /* Añade bordes redondeados */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            /* Añade una sombra */
-            display: none;
-            /* Oculta el menú por defecto */
-        }
-
-        .menuppal.is_active {
-            display: block;
-            /* Muestra el menú cuando está activo */
-        }
-
-        .menuppal ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        .menuppal ul li {
-            list-style: none;
-            text-align: center;
-            font-family: Verdana, Arial, Helvetica;
-            color: #369;
-            font-size: 1.5rem;
-            line-height: 3em;
-            height: 3em;
-            text-transform: none;
-            font-weight: bold;
-        }
-
-        .menuppal ul li a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .menuppal ul li a:hover {
-            text-decoration: none;
-            color: #333;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="plugin/highlight/monokai.css"> -->
+    
 </head>
 
 <body>
@@ -153,7 +25,7 @@
     </div>
     <nav class="menuppal">
         <ul>
-            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#intro">Introducción</a></li>
             <li><a href="#abstract">Abstract</a></li>
             <li><a href="#objetivo-general">Objetivo General</a></li>
             <li><a href="#objetivos-especificos">Objetivos Específicos</a></li>
@@ -166,7 +38,8 @@
     </nav>
     <div class="reveal">
         <div class="slides">
-            <section id="introduccion"  data-background-image="https://tecseris.com/wp-content/uploads/2023/09/Como-hacer-un-inventario-a-mano-5-pasos.webp" data-background-size="cover" data-background-position="center" data-background-repeat="no-repeat" data-background-opacity="0.8">
+            <section id="intro" data-background-image="css/img/almacen.jpeg" data-background-size="cover"
+                data-background-position="center" data-background-repeat="no-repeat" data-background-opacity="0.3">
                 <h2 data-fragment-index="1">Introducción</h2>
                 <p>El CPIC actualmente gestiona su inventario y préstamos de manera manual, lo que causa ineficiencia y
                     falta de control. Este proceso, que involucra herramientas, equipos y recursos, es propenso a
@@ -174,7 +47,9 @@
                     digital especializado para automatizar la gestión, mejorando el control, la precisión, la
                     accesibilidad y la transparencia, optimizando la administración de inventarios y préstamos.</p>
             </section>
-            <section id="abstract">
+            <section id="abstract" data-background-image="css/img/WhatsApp Image 2024-12-10 at 3.53.45 PM.jpeg"
+                data-background-size="cover" data-background-position="center" data-background-repeat="no-repeat"
+                data-background-opacity="0.3">
                 <h2>Abstract</h2>
                 <p>Manual inventory management at the CPIC warehouse leads to inefficiencies, congestion, and errors in
                     tool control. This approach slows down processes and complicates material tracking. Implementing
@@ -184,13 +59,16 @@
                     inventory management. This project is crucial for improving the warehouse's efficiency, accuracy,
                     and adaptability.</p>
             </section>
-            <section id="objetivo-general">
+            <section id="objetivo-general" data-background-image="css/img/herramientas2.jpeg"
+                data-background-size="cover" data-background-position="center" data-background-repeat="no-repeat"
+                data-background-opacity="0.3">
                 <h2>Objetivo General</h2>
                 <p>Desarrollar un sistema automatizado para controlar en tiempo real los niveles de stock y los procesos
                     de préstamos y devoluciones en el almacén del CPIC, mejorando la eficiencia en la gestión de
                     suministros.</p>
             </section>
-            <section id="objetivos-especificos">
+            <section id="objetivos-especificos" data-background-image="css/img/tools.jpeg" data-background-size="cover"
+                data-background-position="center" data-background-repeat="no-repeat" data-background-opacity="0.3">
                 <h2>Objetivos Específicos</h2>
                 <ul>
                     <li>Identificar requisitos funcionales y no funcionales del sistema, incluyendo procesos actuales y
@@ -201,22 +79,36 @@
                         agilización de préstamos y devoluciones.</li>
                 </ul>
             </section>
-            <section id="descripcion">
+            <section id="descripcion" data-background-image="css/img/WhatsApp Image 2024-12-10 at 3.53.43 PM (1).jpeg"
+                data-background-size="cover" data-background-position="center" data-background-repeat="no-repeat"
+                data-background-opacity="0.3">
                 <h2>Descripción</h2>
-                <p>La gestión manual de inventarios y préstamos en el CPIC es ineficiente y afecta el control y la operatividad. 
-                Con la creciente demanda de servicios, es urgente digitalizar estos procesos. Proponemos desarrollar un software 
-                especializado para automatizar la gestión de suministros, agilizar operaciones y mejorar el acceso a los recursos. 
-                Esta solución mejorará la precisión, rapidez en la toma de decisiones, transparencia en auditorías y eficiencia operativa, 
-                utilizando el ciclo PHVA para asegurar un desarrollo y mejora continua con resultados sostenibles y de alto impacto.</p>
+                <p>La gestión manual de inventarios y préstamos en el CPIC es ineficiente y afecta el control y la
+                    operatividad.
+                    Con la creciente demanda de servicios, es urgente digitalizar estos procesos. Proponemos desarrollar
+                    un software
+                    especializado para automatizar la gestión de suministros, agilizar operaciones y mejorar el acceso a
+                    los recursos.
+                    Esta solución mejorará la precisión, rapidez en la toma de decisiones, transparencia en auditorías y
+                    eficiencia operativa,
+                    utilizando el ciclo PHVA para asegurar un desarrollo y mejora continua con resultados sostenibles y
+                    de alto impacto.</p>
             </section>
-            <section id="planteamiento">
+            <section id="planteamiento" data-background-image="css/img/WhatsApp Image 2024-12-10 at 3.53.43 PM (2).jpeg"
+                data-background-size="cover" data-background-position="center" data-background-repeat="no-repeat"
+                data-background-opacity="0.3">
                 <h2>Planteamiento del Problema</h2>
-                <p>El control manual de inventarios y préstamos en el CPIC es ineficiente, causando congestión e irregularidades. Aunque existen modelos 
-                    teóricos, no se han aplicado soluciones prácticas. Se requiere con urgencia una transformación digital para optimizar la logística del 
-                    almacén mediante una herramienta tecnológica que agilice procesos, garantice eficiencia y satisfaga a usuarios y personal, mejorando así 
+                <p>El control manual de inventarios y préstamos en el CPIC es ineficiente, causando congestión e
+                    irregularidades. Aunque existen modelos
+                    teóricos, no se han aplicado soluciones prácticas. Se requiere con urgencia una transformación
+                    digital para optimizar la logística del
+                    almacén mediante una herramienta tecnológica que agilice procesos, garantice eficiencia y satisfaga
+                    a usuarios y personal, mejorando así
                     la operatividad con un control más preciso y transparente.</p>
             </section>
-            <section id="alcance">
+            <section id="alcance" data-background-image="css/img/WhatsApp Image 2024-12-10 at 3.53.43 PM.jpeg"
+                data-background-size="cover" data-background-position="center" data-background-repeat="no-repeat"
+                data-background-opacity="0.3">
                 <h2>Alcance</h2>
                 <p>El sistema estará diseñado para adaptarse a las necesidades del SENA y su infraestructura, y será
                     escalable para incorporar futuras ampliaciones o modificaciones según los cambios en la oferta
@@ -225,17 +117,20 @@
                     todos los Centros de la Regional. Al optimizar la disponibilidad y gestión de herramientas y
                     materiales, se mejorará la experiencia educativa de aprendices e instructores.</p>
             </section>
-            <section id="impacto">
+            <section id="impacto" data-background-image="css/img/WhatsApp Image 2024-12-10 at 3.53.44 PM (1).jpeg"
+                data-background-size="cover" data-background-position="center" data-background-repeat="no-repeat"
+                data-background-opacity="0.3">
                 <h2>Impacto</h2>
-                <p>Nuestro sistema ofrece una gestión más ágil y eficiente al automatizar los procesos, mejorando la
-                    eficiencia operativa. Al reducir los errores humanos y las pérdidas de materiales, se logra un
-                    control más preciso. Con información actualizada, facilita una planificación y toma de decisiones
-                    más efectivas. La optimización de recursos asegura un seguimiento detallado de inventarios, evitando
-                    desabastecimientos y excesos. Además, proporciona mayor transparencia y control mediante auditorías
-                    automáticas y seguimiento en tiempo real. Su escalabilidad y adaptabilidad permiten expandir la
-                    solución a otros centros de formación, garantizando una gestión uniforme y eficiente.</p>
+                <p>Nuestro sistema optimiza la gestión operativa al automatizar procesos, reducir errores y pérdidas de
+                    materiales, lo que mejora el control y la eficiencia. Con información actualizada, facilita la toma
+                    de decisiones y planificación. Garantiza un seguimiento detallado de inventarios, evitando
+                    desabastecimientos y excesos. Además, ofrece mayor transparencia mediante auditorías automáticas y
+                    seguimiento en tiempo real. Su escalabilidad permite adaptarse a otros centros de formación,
+                    asegurando una gestión eficiente y uniforme.</p>
             </section>
-            <section id="ambiental">
+            <section id="ambiental" data-background-image="css/img/WhatsApp Image 2024-12-10 at 3.53.45 PM (2).jpeg"
+                data-background-size="cover" data-background-position="center" data-background-repeat="no-repeat"
+                data-background-opacity="0.3">
                 <h2>Impacto Ambiental Positivo</h2>
                 <p>Nuestra solución contribuye a la reducción del uso de papel, eliminando registros físicos y
                     disminuyendo el consumo de papel y residuos. Además, al optimizar el control de inventarios, reduces
@@ -249,6 +144,7 @@
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
+    <script src="js/menu.js"></script>
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
@@ -258,27 +154,13 @@
             transition: 'convex', // Cambia la transición aquí
             transitionSpeed: 'fast', // Velocidad de transición rápida
             touch: true, // Activa el soporte táctil
+            controls: false,
             // Learn about plugins: https://revealjs.com/plugins/
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
         });
 
-        // JavaScript para el menú hamburguesa
-        var menu = document.querySelector('.hamburger');
-        function toggleMenu(event) {
-            this.classList.toggle('is-active');
-            document.querySelector(".menuppal").classList.toggle("is_active");
-            event.preventDefault();
-        }
-        menu.addEventListener('click', toggleMenu, false);
-
-        // Cerrar el menú al hacer clic en un enlace
-        var menuLinks = document.querySelectorAll('.menuppal a');
-        menuLinks.forEach(function (link) {
-            link.addEventListener('click', function () {
-                menu.classList.remove('is-active');
-                document.querySelector(".menuppal").classList.remove("is_active");
-            });
-        });
+        
+        
     </script>
 </body>
 

@@ -18,13 +18,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 :root {
   --r-background-color: #002b36;
-  --r-main-font: 'Lobster', cursive;
-  --r-main-font-size: 40px;
-  --r-main-color: black;
+  --r-main-font: 'Arial', sans-serif;
+  --r-main-font-size: 61px;
+  --r-main-color: rgb(255, 255, 255);
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: League Gothic, Impact, sans-serif;
-  --r-heading-color: black;
+  --r-heading-color: rgb(255, 255, 255);
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
@@ -55,6 +55,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-size: var(--r-main-font-size);
   font-weight: normal;
   color: var(--r-main-color);
+  -webkit-text-stroke: 1px black; /* Para navegadores basados en WebKit */
+  text-shadow: 
+    -0.5px -0.5px 0 #000,  
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000; /* Simulación de trazo para otros navegadores */
 }
 
 .reveal ::selection {
