@@ -29,7 +29,7 @@ body {
 }
 
 ._layer {
-    background: rgba(255, 255, 255, 1);
+    background: #39A900;
     margin-bottom: 4px;
     border-radius: 2px;
     width: 40px;
@@ -70,7 +70,7 @@ body {
 }
 
 .menuppal {
-    background-color: rgba(255, 255, 255, 0.9); /* Ajusta la transparencia aquí */
+    background-color: rgba(57, 169, 0, 0.973); /* Ajusta la transparencia aquí */
     height: auto; /* Ajusta la altura automáticamente */
     width: 200px; /* Define un ancho fijo */
     position: fixed;
